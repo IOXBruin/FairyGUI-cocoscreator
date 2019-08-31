@@ -625,6 +625,7 @@ namespace fgui {
             if (this._maskContent instanceof GImage) {
                 this._customMask.type = cc.Mask.Type.IMAGE_STENCIL;
                 this._customMask.spriteFrame = (<GImage>this._maskContent)._content.spriteFrame;
+                this._customMask.alphaThreshold = 0.1;
             }
             else {
                 if ((<GGraph>this._maskContent).type == GraphType.Ellipse)
